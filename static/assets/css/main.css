@@ -77,6 +77,42 @@ input, select, textarea {
 	text-align: center;
 }
 
+.projects-nav {
+	display: flex;
+	justify-content: center;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.pn-item {
+	text-align: center;
+	list-style: none;
+	margin: 0 10px;
+	padding: 5px;
+	transition: transform .5s ease-out;
+}
+
+.pn-item:hover {
+	cursor: pointer;
+	transform: translateY(-10%);
+}
+
+.proj-active {
+	/* font-weight: bold; */
+	transition: background-color 0.25s ease-in-out, transform .5s ease-out;
+	background-color:rgb(108, 212, 108);
+	border-radius: 10px;
+	color: rgb(255, 255, 255);
+}
+
+.disappear {
+	display: none;
+}
+
+.appear {
+	display: block;
+}
+
 /* Row */
 
 	.row {
