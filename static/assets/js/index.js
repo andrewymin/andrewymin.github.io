@@ -27,11 +27,19 @@ projectNavItems.forEach(link => {
                 p.classList.add('disappear');
                 p.classList.remove('appear');
             });
+            webDevProjects.forEach(p => {
+                p.classList.add('appear');
+                p.classList.remove('disappear');
+            });
         }
         if ($("ul li:nth-child(3)").hasClass("proj-active")) {
             webDevProjects.forEach(p => {
                 p.classList.add('disappear');
                 p.classList.remove('appear');
+            });
+            pythonProjects.forEach(p => {
+                p.classList.add('appear');
+                p.classList.remove('disappear');
             });
             console.log('true');
         }

@@ -31,13 +31,21 @@ projectNavItems.forEach(link => {
                 p.classList.add('disappear')
                 p.classList.remove('appear')
             })
+            webDevProjects.forEach(p => {
+                p.classList.add('appear')
+                p.classList.remove('disappear')
+            })
             // console.log('true')
         }
         if ($("ul li:nth-child(3)" ).hasClass("proj-active")) {
-            // make the class with portfolio > python disapear; vice versa with portfolio > web for ul li:nth-child(3)
+            // vice versa with portfolio > web for ul li:nth-child(3)
             webDevProjects.forEach(p => {
                 p.classList.add('disappear')
                 p.classList.remove('appear')
+            })
+            pythonProjects.forEach(p => {
+                p.classList.add('appear')
+                p.classList.remove('disappear')
             })
             console.log('true')
         }
