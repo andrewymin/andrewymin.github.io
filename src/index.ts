@@ -23,7 +23,7 @@ projectNavItems.forEach(link => {
                 p.classList.add('appear')
                 p.classList.remove('disappear')
             })
-            console.log('true')
+            // console.log('true')
         }
         if ($("ul li:nth-child(2)" ).hasClass("proj-active")) {
             // make the class with portfolio > python disapear; 
@@ -47,7 +47,7 @@ projectNavItems.forEach(link => {
                 p.classList.add('appear')
                 p.classList.remove('disappear')
             })
-            console.log('true')
+            // console.log('true')
         }
         
       });

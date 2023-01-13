@@ -20,7 +20,6 @@ projectNavItems.forEach(link => {
                 p.classList.add('appear');
                 p.classList.remove('disappear');
             });
-            console.log('true');
         }
         if ($("ul li:nth-child(2)").hasClass("proj-active")) {
             pythonProjects.forEach(p => {
@@ -41,7 +40,6 @@ projectNavItems.forEach(link => {
                 p.classList.add('appear');
                 p.classList.remove('disappear');
             });
-            console.log('true');
         }
     });
 });
