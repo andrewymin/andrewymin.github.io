@@ -105,6 +105,20 @@ input, select, textarea {
 	color: rgb(255, 255, 255);
 }
 
+/* .disappear { */
+	/* display: none; */
+	/* animation: fade-out-up 500ms forwards;
+	pointer-events: none;
+} */
+
+/* .appear {
+	display: block;
+}
+
+.python[closing] {
+	position: absolute;
+} */
+
 .disappear {
 	display: none;
 }
@@ -112,6 +126,7 @@ input, select, textarea {
 .appear {
 	display: block;
 }
+
 
 /* Row */
 
@@ -2008,6 +2023,21 @@ input, select, textarea {
             0% {opacity: 1;}
             100% {opacity: 0;}
         }
+
+        @keyframes fade-out-up {
+            0% {opacity: 1; transform: translateY(0);}
+            100% {opacity: 0; transform: translateY(-10%);}
+        }
+
+		@keyframes fade-in {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+		}
+
+		@keyframes slide-up {
+			0% {transform: translateY(100%);}
+			100% {transform: translateY(0);}
+		}
 
         @media screen and (max-width: 980px) {
             .intro > .msg-sent {

@@ -19,26 +19,35 @@ projectNavItems.forEach(link => {
             projects === null || projects === void 0 ? void 0 : projects.forEach(p => {
                 p.classList.add('appear');
                 p.classList.remove('disappear');
+                p.removeAttribute('closing');
             });
         }
         if ($("ul li:nth-child(2)").hasClass("proj-active")) {
             pythonProjects.forEach(p => {
                 p.classList.add('disappear');
                 p.classList.remove('appear');
+                p.addEventListener('animationend', () => {
+                    p.setAttribute('closing', "");
+                }, { once: true });
             });
             webDevProjects.forEach(p => {
                 p.classList.add('appear');
                 p.classList.remove('disappear');
+                p.removeAttribute('closing');
             });
         }
         if ($("ul li:nth-child(3)").hasClass("proj-active")) {
             webDevProjects.forEach(p => {
                 p.classList.add('disappear');
                 p.classList.remove('appear');
+                p.addEventListener('animationend', () => {
+                    p.setAttribute('closing', "");
+                }, { once: true });
             });
             pythonProjects.forEach(p => {
                 p.classList.add('appear');
                 p.classList.remove('disappear');
+                p.removeAttribute('closing');
             });
         }
     });

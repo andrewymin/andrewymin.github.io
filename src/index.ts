@@ -1,5 +1,5 @@
 let d:Date = new Date();
-let year:Number = d.getFullYear();
+let year: Number = d.getFullYear();
 $(".year").text(String(year));
 
 let projectNavItems = document.querySelectorAll('.pn-item');
@@ -22,30 +22,39 @@ projectNavItems.forEach(link => {
             projects?.forEach(p => {
                 p.classList.add('appear')
                 p.classList.remove('disappear')
+                p.removeAttribute('closing')
             })
             // console.log('true')
         }
         if ($("ul li:nth-child(2)" ).hasClass("proj-active")) {
             // make the class with portfolio > python disapear; 
             pythonProjects.forEach(p => {
-                p.classList.add('disappear')
-                p.classList.remove('appear')
-            })
+                p.classList.add('disappear');
+                p.classList.remove('appear');
+                p.addEventListener('animationend', () => {
+                    p.setAttribute('closing', "");
+                }, {once: true});
+            });
             webDevProjects.forEach(p => {
-                p.classList.add('appear')
-                p.classList.remove('disappear')
-            })
+                p.classList.add('appear');
+                p.classList.remove('disappear');
+                p.removeAttribute('closing');
+            });
             // console.log('true')
         }
         if ($("ul li:nth-child(3)" ).hasClass("proj-active")) {
             // vice versa with portfolio > web for ul li:nth-child(3)
             webDevProjects.forEach(p => {
-                p.classList.add('disappear')
-                p.classList.remove('appear')
+                p.classList.add('disappear');
+                p.classList.remove('appear');
+                p.addEventListener('animationend', () => {
+                    p.setAttribute('closing', "");
+                }, {once: true});
             })
             pythonProjects.forEach(p => {
-                p.classList.add('appear')
-                p.classList.remove('disappear')
+                p.classList.add('appear');
+                p.classList.remove('disappear');
+                p.removeAttribute('closing');
             })
             // console.log('true')
         }
