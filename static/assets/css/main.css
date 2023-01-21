@@ -2310,7 +2310,7 @@ input, select, textarea {
 			}
 
 			.projects-nav {
-				flex-wrap: wrap;
+				flex-wrap: wrap; 
 				padding-left: 0px;
 				margin-bottom: 20px;
 				gap: 1rem;
