@@ -2309,4 +2309,11 @@ input, select, textarea {
 				margin-left: 0.5em;
 			}
 
+			.projects-nav {
+				flex-wrap: wrap;
+				padding-left: 0px;
+				margin-bottom: 20px;
+				gap: 1rem;
+			}
+
 		}
