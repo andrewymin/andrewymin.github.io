@@ -7,7 +7,7 @@ let projectNavItems = document.querySelectorAll('.pn-item');
 let projects = (_a = document.getElementById('portfolio')) === null || _a === void 0 ? void 0 : _a.querySelectorAll('div');
 let pythonProjects = document.querySelectorAll('.python');
 let webDevProjects = document.querySelectorAll('.webDev');
-console.log(projects);
+// console.log(projects);
 projectNavItems.forEach(link => {
     link.addEventListener("click", e => {
         projectNavItems.forEach(link => {
